@@ -1,0 +1,19 @@
+@php
+$coun=session('coun');
+$user=session('user');
+@endphp
+<!DOCTYPE html>
+<html>
+    <head>
+        @include('head')
+    </head>
+    <body>
+    <main>
+    @include('nav')
+    <section>
+        @yield('content')
+    </section>
+    </main>
+        @include('foot')
+    </body>
+</html>
